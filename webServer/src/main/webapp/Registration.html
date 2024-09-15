@@ -1,0 +1,104 @@
+j<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration form</title>
+<style>
+.main {
+	background-color: #FFFFFF;
+	width: 800px;
+	height: auto;
+	margin: 10em auto;
+	border-radius: 1.5em;
+	box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+	text-align: center;
+}
+
+.main img {
+	width: 150px; /* Increase the width */
+	height: 150px; /* Increase the height */
+	margin-bottom: 0px;
+	margin-top: 20px;
+}
+
+.form1 {
+	margin-bottom: 20px; /* Add some space below the form */
+}
+
+.Redirect, .submit {
+	cursor: pointer;
+	border-radius: 5em;
+	background: linear-gradient(to right, #FFEB3B, #FFC107);
+	border: 0;
+	padding: 10px 40px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 13px;
+	box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+	margin-top: 20px;
+	text-decoration: none;
+}
+
+.form1 input[type="text"],
+  .form1 input[type="email"],
+  .form1 input[type="tel"],
+  .form1 input[type="password"],
+  .form1 input[type="plan"],
+  .form1 input[type="date"] {
+    width: 80%;
+	color: rgb(38, 50, 56);
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: 1px;
+	background: rgba(136, 126, 126, 0.04);
+	padding: 10px 20px;
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	box-sizing: border-box;
+	border: 2px solid rgba(0, 0, 0, 0.05);
+	margin-bottom: 27px;
+	font-family: 'Ubuntu', sans-serif;
+	text-decoration: none;
+   
+  } 
+.title{
+font-family: 'Oswald', sans-serif;
+	font-size: 3em;
+	color: #000000;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	background: linear-gradient(to right, #FFEB3B, #FFC107);
+	padding: 20px;
+	border-radius: 20px;
+	letter-spacing: 2px;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	transition: transform 0.2s ease-in-out;
+	margin-bottom: 20px;   
+}
+</style>
+</head>
+
+<body>
+	<div class="main">
+		<img src="gym_logo.jpg" alt="Gym Logo">
+		<p class="title">User Registration Form</p>
+		<form class="form1" action="Register" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="phone">Phone Number:</label><br>
+        <input type="text" id="phone" name="phone" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+        <label for="doj">Date of Joining:</label><br>
+        <input type="date" id="doj" name="doj" required><br>
+        <label for="plan">Plan</label><br>
+        <input type="text"  name="plan" required><br><br>
+        <input class="submit" type="submit" value="Submit">
+        <a class="Redirect" href="home.html">Get back</a>
+    </form>
+	</div>
+</body>
+</html>
